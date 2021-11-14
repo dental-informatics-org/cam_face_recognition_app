@@ -16,3 +16,79 @@ Connect to your instance using its Public DNS: `ec2-34-221-121-230.us-west-2.com
 ```
 ssh -i "ml-test.pem" ec2-user@ec2-34-221-121-230.us-west-2.compute.amazonaws.com
 ```
+
+> First steps
+- Create an conda env for the task: 
+
+```python
+conda create --name myenv
+```
+ myenv: the name of your environment. In this case I used 'facialrecog'.
+
+ - Ative o ambiente conda: 
+ ```python
+ conda activate facialrecog
+ ```
+
+- Install necessary dependencies (make sure cmake is installed first):: 
+
+```python
+git clone https://github.com/davisking/dlib.git
+```
+- Create build folder
+```python
+cd dlib, mkdir build, cd build
+```
+- Check compatibility with the machine. Make sure the dlib will not use CUDA and cuDNN. There is a conflict with the architecture and for now I have not been able to find a way to optimize the process.
+[StackOverflow Opened Question](https://stackoverflow.com/questions/69966148/dlib-in-face-recognition-are-not-working-well-with-cuda-in-ec2-amazon-deeplearni)
+
+```python
+cmake .., cmake --build .
+```
+- Install setup.py using the C++ lib in python
+```python
+cd ..
+python3 setup.py install
+```
+
+- Install jupyter notebook:
+```python
+conda install jupyter
+```
+
+- Install pip in conda env:
+
+```python
+conda install pip
+```
+
+- Install ipykernel (jupyternotebook):
+
+```python
+pip install ipykernel
+# preferably do not install only with 'conda install ipykernel'
+```
+
+- Install OpenCV:
+```python
+pip install opencv-python
+```
+</br>
+
+# Pipeline of algorithm:
+
+Open the following file in your browser:
+
+ face_recognition/flowchart_face_recog.drawio.html 
+ 
+ Or see the pipeline pdf
+ [Pipeline's FlowChart](https://github.com/dental-informatics-org/dental.informatics.org/blob/main/face_recognition/Preview.pdf)
+ ## Pastas:
+ 
+ /Data contains the /to_detect folder which consists of the images to have faces detected.
+
+ They also contain the /to_recog folder where the images have created numpy arrays.
+
+ The algorithm is still under construction. Watch this video for a better understanding of how this beta version works:
+
+ > https://www.youtube.com/watch?v=NpebGV_nDRw   
