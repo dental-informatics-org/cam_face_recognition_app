@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="">
-    <img src="https://github.com/dental-informatics-org/cam_face_recognition_app/blob/main/logodent.png" alt="logo_dent">
+    <img src="https://github.com/dental-informatics-org/cam_face_recognition_app/blob/logodent.png" alt="logo_dent">
   </a>
 </p>
 
