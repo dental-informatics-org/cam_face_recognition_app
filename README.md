@@ -1,3 +1,12 @@
+<h1 align="center">Face Recognition Using Cam Streaming</h1>
+<h2 align="center">Healthcare & Life Sciences Cloud Solutions</h2>
+
+<p align="center">
+  <a href="">
+    <img src="https://github.com/igoralves1/Dental-Informatics/blob/main/imgs/aws_health.png" alt="aws_health">
+  </a>
+</p>
+
 # Face Recognition Using Cam Streaming
 
 ![alt text](https://github.com/dental-informatics-org/cam_face_recognition_app/blob/main/logo.webp?raw=true)
