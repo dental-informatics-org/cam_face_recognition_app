@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="">
-    <img src="https://github.com/igoralves1/Dental-Informatics/blob/main/imgs/aws_health.png" alt="aws_health">
+    <img src="https://github.com/igoralves1/cam_face_recognition_app/blob/main/logo.webp" alt="aws_health">
   </a>
 </p>
 
