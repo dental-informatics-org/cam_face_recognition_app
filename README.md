@@ -16,8 +16,9 @@ Connect to your instance using its Public DNS: `ec2-34-221-121-230.us-west-2.com
 ```
 ssh -i "ml-test.pem" ec2-user@ec2-34-221-121-230.us-west-2.compute.amazonaws.com
 ```
+</br>
 
-> First steps
+> # First steps
 - Create an conda env for the task: 
 
 ```python
@@ -83,7 +84,7 @@ Open the following file in your browser:
  
  Or see the pipeline pdf
  [Pipeline's FlowChart](https://github.com/dental-informatics-org/dental.informatics.org/blob/main/face_recognition/Preview.pdf)
- ## Pastas:
+ ## Folders:
  
  /Data contains the /to_detect folder which consists of the images to have faces detected.
 
