@@ -1,5 +1,6 @@
 # Face Recognition Using Cam Streaming
 
+![alt text](https://github.com/dental-informatics-org/cam_face_recognition_app/blob/main/logo.webp?raw=true)
 
 ## Deep Learning AMI (Amazon Linux 2) Version 53.0 - ami-063679062358cd1f3
 >MXNet-1.8.0 & 1.7.0, TensorFlow-2.4.3, 2.3.4 & 1.15.5, PyTorch-1.7.1 & 1.8.1, Neuron, & others. NVIDIA CUDA, cuDNN, NCCL, Intel MKL-DNN, Docker, NVIDIA-Docker & EFA support. For fully managed experience, check: https://aws.amazon.com/sagemaker
@@ -19,19 +20,19 @@ ssh -i "ml-test.pem" ec2-user@ec2-34-221-121-230.us-west-2.compute.amazonaws.com
 </br>
 
 > # First steps
-- Create an conda env for the task: 
+- Create an conda env for the task:
 
 ```python
 conda create --name myenv
 ```
  myenv: the name of your environment. In this case I used 'facialrecog'.
 
- - Ative o ambiente conda: 
+ - Ative o ambiente conda:
  ```python
  conda activate facialrecog
  ```
 
-- Install necessary dependencies (make sure cmake is installed first):: 
+- Install necessary dependencies (make sure cmake is installed first)::
 
 ```python
 git clone https://github.com/davisking/dlib.git
@@ -80,19 +81,19 @@ pip install opencv-python
 
 Open the following file in your browser:
 
- face_recognition/flowchart_face_recog.drawio.html 
- 
+ face_recognition/flowchart_face_recog.drawio.html
+
  Or see the pipeline pdf
  [Pipeline's FlowChart](https://github.com/dental-informatics-org/dental.informatics.org/blob/main/face_recognition/Preview.pdf)
  ## Folders:
- 
+
  /Data contains the /to_detect folder which consists of the images to have faces detected.
 
  They also contain the /to_recog folder where the images have created numpy arrays.
 
  The algorithm is still under construction. Watch this video for a better understanding of how this beta version works:
 
- > https://www.youtube.com/watch?v=NpebGV_nDRw   
+ > https://www.youtube.com/watch?v=NpebGV_nDRw
 
 
 
@@ -102,3 +103,5 @@ Open the following file in your browser:
 Resource:
 1. [Deep Dive Into AWS Polly](https://labrlearning.medium.com/a-deep-dive-into-amazon-polly-3672baf6c624)
 2. [AWS POLLY Browser + Cognito](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html)
+3. [Amazon Polly using Node.js](https://medium.com/@anaptfox/getting-started-with-amazon-polly-using-node-js-345e84dbd23d)
+4. [synthesizeSpeech-aws class](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Polly.html#synthesizeSpeech-property)
