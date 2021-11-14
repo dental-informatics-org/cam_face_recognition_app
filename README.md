@@ -16,3 +16,9 @@ Connect to your instance using its Public DNS: `ec2-34-221-121-230.us-west-2.com
 ```
 ssh -i "ml-test.pem" ec2-user@ec2-34-221-121-230.us-west-2.compute.amazonaws.com
 ```
+
+
+
+Resource:
+1. [Deep Dive Into AWS Polly](https://labrlearning.medium.com/a-deep-dive-into-amazon-polly-3672baf6c624)
+2. [AWS POLLY Browser + Cognito](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html)
